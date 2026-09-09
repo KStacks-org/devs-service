@@ -142,6 +142,7 @@ Following KStacks GitOps conventions, the final deployment handoff should update
 - `deploy/kubernetes/`: deployment base and operational notes
 - `docs/`: architecture, planning, and video-pilot documentation
 - `tools/telegram-import/`: resumable Telegram migration utility
+- `tools/static-hls-import/`: resumable Drive-to-R2 HLS backlog importer
 
 ## 🤝 Contributing
 

@@ -12,3 +12,5 @@ tools/telegram-import/output/
 tools/telegram-import/*.session
 tools/telegram-import/*.session-journal
 tools/telegram-import/__pycache__/
+tools/static-hls-import/output/
+tools/static-hls-import/**/__pycache__/

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-28T00:00:00Z",
+  "source": {
+    "remote": "devs-drive:"
+  },
+  "destination": {
+    "remote": "devs-r2:devs-video-delivery-test/pilots",
+    "publicBaseUrl": "https://video.example.test/pilots",
+    "corsOrigin": "https://devs.example.test"
+  },
+  "series": [
+    {
+      "slug": "cpcs-202",
+      "title": {
+        "en": "CPCS-202",
+        "ar": null
+      },
+      "sections": [
+        {
+          "position": 1,
+          "slug": "slides",
+          "title": {
+            "en": "Slides",
+            "ar": null
+          },
+          "lessons": [
+            {
+              "id": "cpcs-202-s01-l001",
+              "position": 1,
+              "title": {
+                "en": "Chapter 1 — Part 1",
+                "ar": null
+              },
+              "sourcePath": "CPCS-202/CPCS-202 Slides/example.MOV",
+              "sourceBytes": 123456789,
+              "destinationPath": "cpcs-202/slides/lesson-001/2026-08-28-v1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
