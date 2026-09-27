@@ -552,7 +552,9 @@ def upload(output: Path, destination: str) -> None:
 
 
 def validate_public_url(url: str, cors_origin: str) -> None:
-    headers = {"Origin": cors_origin} if cors_origin else {}
+    headers = {"User-Agent": "devs-hls-importer/1.0"}
+    if cors_origin:
+        headers["Origin"] = cors_origin
     last_error: Exception | None = None
     body = ""
     for attempt, delay in enumerate((0, 5, 15, 30, 60, 120, 240), start=1):
