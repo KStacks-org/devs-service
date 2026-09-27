@@ -555,8 +555,12 @@ def validate_public_url(url: str, cors_origin: str) -> None:
     headers = {"Origin": cors_origin} if cors_origin else {}
     last_error: Exception | None = None
     body = ""
-    for delay in (0, 2, 4, 8, 16):
+    for attempt, delay in enumerate((0, 5, 15, 30, 60, 120, 240), start=1):
         if delay:
+            print(
+                f"public URL not ready yet (attempt {attempt}), retrying in {delay}s: {url}",
+                flush=True,
+            )
             time.sleep(delay)
         try:
             request = urllib.request.Request(url, headers=headers)
